@@ -21,6 +21,10 @@ export type FormData = {
     ja: boolean;
     nej: boolean;
   };
+  betalingsmetode?: {
+    fast: boolean;
+    forbrugsafregnet: boolean;
+  };
 };
 
 const defaultFormData: FormData = {

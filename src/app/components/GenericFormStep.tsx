@@ -1,9 +1,9 @@
-import { Path, useFormContext } from "react-hook-form";
+import { Path, useFormContext, UseFormRegister } from "react-hook-form";
 import { motion } from "framer-motion";
 import { FormData } from "./MultiStepForm/MultiStepForm";
 
 type BaseField = {
-  name: string;
+  name: Path<FormData>;
   label: string;
 };
 
@@ -29,7 +29,7 @@ type GenericFormStepProps = {
 
 const renderField = (
   field: Field,
-  register: any,
+  register: UseFormRegister<FormData>,
   onChange: GenericFormStepProps["onChange"]
 ) => {
   switch (field.type) {

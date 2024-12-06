@@ -1,3 +1,21 @@
+# Clever Product Picker
+
+I denne POC er der lagt vægt på at demonstrere, hvordan man kan lave en multistep form med react-hook-form, og hvordan man kan animere den med Framer Motion.
+Der er også lagt vægt på at bruge generiske komponenter til form trin, så det er nemt at tilføje nye trin eller udvide med nye felter.
+Formen kan også benyttes med tastatur.
+
+Det er altid svært at aflevere en halv løsning, så ting der kan forbedres:
+
+- css styling er med tailwind, og er ikke sat op i et system eller lavet særlig genbrugeligt
+- ville gerne ligge steps trinnet i url
+- bedre overgang til kvitteringssiden, med mulighed for at konfigurere hvilket priodukt der skal vises
+- fixe illustrationerne så de har den rigtige størrelse, så de er bedre alignet med teksten
+- der er lavet et minimum af responsiv styling, dette kan også forbedres
+
+Der er tilføjet knapper i bunden af hvert trin, så man får en mulighed for at gå frem/tilbage
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -17,8 +35,6 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
