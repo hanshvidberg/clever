@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-red-hat-display)"],
+        redHatDisplay: ["var(--font-red-hat-display)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

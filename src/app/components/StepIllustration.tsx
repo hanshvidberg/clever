@@ -23,6 +23,9 @@ type StepIllustrationType = {
 };
 
 export const StepIllustration = ({ step }: StepIllustrationType) => {
+  if (step > 4) {
+    return null;
+  }
   return (
     <div className="relative w-full">
       <AnimatePresence mode="wait">
@@ -34,7 +37,7 @@ export const StepIllustration = ({ step }: StepIllustrationType) => {
           exit="exit"
           src={`/images/step-${step}.png`}
           alt={`Step ${step} illustration`}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
         />
       </AnimatePresence>
     </div>
